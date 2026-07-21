@@ -1,7 +1,7 @@
 package com.travelagency.packageservice.services;
 
 import com.travelagency.packageservice.entities.TourPackageEntity;
-import com.travelagency.packageservice.respositories.TourPackageRepository;
+import com.travelagency.packageservice.repositories.TourPackageRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
