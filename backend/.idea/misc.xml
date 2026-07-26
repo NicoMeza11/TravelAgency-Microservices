@@ -6,6 +6,10 @@
       <list>
         <option value="$PROJECT_DIR$/m2-package-service/pom.xml" />
         <option value="$PROJECT_DIR$/m5-payment-service/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/m4-booking-service/pom.xml" />
+        <option value="$PROJECT_DIR$/config-service/pom.xml" />
+        <option value="$PROJECT_DIR$/gateaway-service/pom.xml" />
       </list>
     </option>
   </component>
