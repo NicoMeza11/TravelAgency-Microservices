@@ -39,6 +39,17 @@ public class TourPackageController {
         return ResponseEntity.ok(updatedPackage);
     }
 
+    @PutMapping("/{id}/reduce-spots")
+    public ResponseEntity<Void> reducesSpots(@PathVariable Long id, @RequestParam int quantity){
+        packageService.reduceSpots(id,quantity);
+        return ResponseEntity.ok().build();
+    }
+
+    @PutMapping("/{id}/add-spots")
+    public ResponseEntity<Void> addSpots(@PathVariable Long id, @RequestParam int quantity){
+        packageService.addSpots(id,quantity);
+        return ResponseEntity.ok().build();
+    }
     /*
     @PutMapping("/update/{idPackage}")
     public ResponseEntity<TourPackageEntity> updatePackage(@PathVariable Long idPackage, @RequestBody TourPackageEntity packageEntity) {

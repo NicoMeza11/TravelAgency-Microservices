@@ -2,6 +2,7 @@ package com.travelagency.packageservice.services;
 
 import com.travelagency.packageservice.entities.TourPackageEntity;
 import com.travelagency.packageservice.repositories.TourPackageRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -14,7 +15,6 @@ import java.util.List;
 public class TourPackageService {
 
     private final TourPackageRepository packageRepository;
-    //private final ReservationRepository reservationRepository;
 
     private void validateBusinessRules(TourPackageEntity packageEntity){
 
@@ -72,6 +72,41 @@ public class TourPackageService {
         validateBusinessRules(tourPackage);
         log.info("The package {} now has {} status", tourPackage.getIdPackage(), tourPackage.getPackageStatus());
         return packageRepository.save(tourPackage);
+    }
+
+    @Transactional
+    public void reduceSpots(Long idPackage, int quantity){
+        TourPackageEntity packageEntity = packageRepository.findById(idPackage)
+                .orElseThrow(() -> new RuntimeException("Package not found with id: "+idPackage));
+
+        if(!"ACTIVE".equalsIgnoreCase(packageEntity.getPackageStatus())){
+            throw new RuntimeException("The package does not have ACTIVE status");
+        }
+
+        if(packageEntity.getSpotsAvailable() < quantity){
+            throw new RuntimeException("There are not enough places for this reservation");
+        }
+        packageEntity.setSpotsAvailable(packageEntity.getSpotsAvailable() - quantity);
+
+        if(packageEntity.getSpotsAvailable() == 0){
+            packageEntity.setPackageStatus("SOLD_OUT");
+        }
+        packageRepository.save(packageEntity);
+    }
+
+    @Transactional
+    public void addSpots(Long idPackage, int quantity){
+        TourPackageEntity tourPackage = packageRepository.findById(idPackage)
+                .orElseThrow(() -> new RuntimeException("Package not found with id: "+idPackage));
+
+        int newSpots = quantity + tourPackage.getSpotsAvailable();
+        tourPackage.setSpotsAvailable(newSpots);
+
+        if("SOLD_OUT".equalsIgnoreCase(tourPackage.getPackageStatus())){
+            tourPackage.setPackageStatus("ACTIVE");
+        }
+
+        packageRepository.save(tourPackage);
     }
 
     /*
