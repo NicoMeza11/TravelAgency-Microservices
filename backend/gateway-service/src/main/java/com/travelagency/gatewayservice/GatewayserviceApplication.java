@@ -1,4 +1,4 @@
-package com.travelagency.gateawayservice;
+package com.travelagency.gatewayservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class GateawayserviceApplication {
+public class GatewayserviceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GateawayserviceApplication.class, args);
+		SpringApplication.run(GatewayserviceApplication.class, args);
 	}
 
 }

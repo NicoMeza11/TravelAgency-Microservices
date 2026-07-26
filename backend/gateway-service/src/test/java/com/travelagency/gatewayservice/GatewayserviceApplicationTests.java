@@ -1,10 +1,10 @@
-package com.travelagency.gateawayservice;
+package com.travelagency.gatewayservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GateawayserviceApplicationTests {
+class GatewayserviceApplicationTests {
 
 	@Test
 	void contextLoads() {
