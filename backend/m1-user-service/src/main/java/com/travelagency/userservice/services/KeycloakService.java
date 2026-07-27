@@ -1,0 +1,62 @@
+package com.travelagency.userservice.services;
+
+import com.travelagency.userservice.Dtos.UserDTO;
+import com.travelagency.userservice.respositories.IKeycloakService;
+import com.travelagency.userservice.util.KeycloakProvider;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import org.keycloak.OAuth2Constants;
+import org.keycloak.admin.client.resource.UserResource;
+import org.keycloak.representations.idm.CredentialRepresentation;
+import org.keycloak.representations.idm.UserRepresentation;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class KeycloakService implements IKeycloakService {
+
+    private final KeycloakProvider keycloakProvider;
+
+    /**
+     * Method to update a user
+     * @param userId id of the user
+     * @param userDTO
+     */
+    @Override
+    public void updateUser(String userId, @NonNull UserDTO userDTO) {
+
+        UserResource userResource = keycloakProvider.getUserResource().get(userId);
+
+        //Update the personal information
+        UserRepresentation userRepresentation = userResource.toRepresentation();
+        userRepresentation.setFirstName(userDTO.getFirstName());
+        userRepresentation.setLastName(userDTO.getLastName());
+
+        userResource.update(userRepresentation); //We save the changes in keycloak
+
+        //The password is updated only if the DTO has one
+        if(userDTO.getPassword() != null && !userDTO.getPassword().isEmpty()){
+            CredentialRepresentation credentialRepresentation = new CredentialRepresentation();
+            credentialRepresentation.setTemporary(false);
+            credentialRepresentation.setType(OAuth2Constants.PASSWORD);
+            credentialRepresentation.setValue(userDTO.getPassword());
+
+            userResource.resetPassword(credentialRepresentation);
+        }
+    }
+
+    @Override
+    public void deleteUser(String userId) {
+        keycloakProvider.getUserResource()
+                .get(userId)
+                .remove();
+    }
+
+    public void disableUser(String userId){
+        UserResource userResource = keycloakProvider.getUserResource().get(userId);
+
+        UserRepresentation user = userResource.toRepresentation();
+        user.setEnabled(false);
+        userResource.update(user);
+    }
+}

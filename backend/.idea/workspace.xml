@@ -5,48 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40109b63-d9df-406f-ba3b-a849b5098fd1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/Dtos/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/config/JwtAuthenticationConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/entities/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/respositories/IKeycloakService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/respositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/services/KeycloakService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m1-user-service/src/main/java/com/travelagency/userservice/util/KeycloakProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/gateaway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/gateway-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateaway-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateaway-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateaway-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateaway-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateaway-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateaway-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateaway-service/src/main/java/com/travelagency/gateawayservice/GateawayserviceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateaway-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateaway-service/src/test/java/com/travelagency/gateawayservice/GateawayserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/gateway-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m2-package-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/m2-package-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "NicoMeza11"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NicoMeza11&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/NicoMeza11/TravelAgency-Microservices.git",
-    "accountId": "5921498d-f21e-4d79-9e66-a9f0b89f5e83"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NicoMeza11/TravelAgency-Microservices.git&quot;,
+    &quot;accountId&quot;: &quot;5921498d-f21e-4d79-9e66-a9f0b89f5e83&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -54,10 +66,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3H1qBnu4k4IrZaK1V4HBwNPndU8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -66,6 +78,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "New/updated database configurations found",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -78,6 +92,7 @@
     "Spring Boot.EurekaserverApplication.executor": "Run",
     "Spring Boot.GatewayserviceApplication.executor": "Run",
     "Spring Boot.PackageServiceApplication.executor": "Run",
+    "Spring Boot.UserserviceApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
@@ -112,14 +127,16 @@
               <entry key="EurekaserverApplication" value="STOPPED" />
               <entry key="GatewayserviceApplication" value="STOPPED" />
               <entry key="PackageServiceApplication" value="STOPPED" />
+              <entry key="UserserviceApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigserviceApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaserverApplication">
     <configuration name="BookingserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="KC_ADMIN=admin;KC_HOST=localhost:8082;KC_PASSWORD=admin;KC_REALM_NAME=spring-boot-realm-dev;KC_URL=http://localhost:8081;KC_ISSUER_HOST=localhost:8081" />
       <module name="bookingservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.travelagency.bookingservice.BookingserviceApplication" />
       <method v="2">
@@ -148,6 +165,7 @@
       </method>
     </configuration>
     <configuration name="PackageServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="KC_ADMIN=admin;KC_HOST=localhost:8082;KC_PASSWORD=admin;KC_REALM_NAME=spring-boot-realm-dev;KC_URL=http://localhost:8081;KC_ISSUER_HOST=localhost:8081" />
       <module name="package-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.travelagency.packageservice.PackageServiceApplication" />
       <method v="2">
@@ -155,12 +173,40 @@
       </method>
     </configuration>
     <configuration name="PaymentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="KC_ADMIN=admin;KC_HOST=localhost:8082;KC_PASSWORD=admin;KC_REALM_NAME=spring-boot-realm-dev;KC_URL=http://localhost:8081;KC_ISSUER_HOST=localhost:8081" />
       <module name="payment-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.travelagency.payment_service.PaymentServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="DB_PASSWORD" value="nico11" />
+        <env name="DB_URL" value="jdbc:postgresql://localhost:5432/db_users" />
+        <env name="DB_USER" value="postgres" />
+        <env name="KC_ADMIN" value="admin" />
+        <env name="KC_HOST" value="localhost:8082" />
+        <env name="KC_PASSWORD" value="admin" />
+        <env name="KC_REALM_NAME" value="spring-boot-realm-dev" />
+        <env name="KC_URL" value="http://localhost:8081" />
+        <env name="KC_ISSUER_HOST" value="localhost:8081" />
+      </envs>
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.travelagency.userservice.UserserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.BookingserviceApplication" />
+      <item itemvalue="Spring Boot.ConfigserviceApplication" />
+      <item itemvalue="Spring Boot.EurekaserverApplication" />
+      <item itemvalue="Spring Boot.GatewayserviceApplication" />
+      <item itemvalue="Spring Boot.PackageServiceApplication" />
+      <item itemvalue="Spring Boot.PaymentServiceApplication" />
+      <item itemvalue="Spring Boot.UserserviceApplication" />
+    </list>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -169,7 +215,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1785045790915</updated>
-      <workItem from="1785045792824" duration="618000" />
+      <workItem from="1785045792824" duration="1347000" />
+      <workItem from="1785104610993" duration="13899000" />
+      <workItem from="1785186649076" duration="5646000" />
     </task>
     <servers />
   </component>
